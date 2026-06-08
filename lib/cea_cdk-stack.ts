@@ -28,7 +28,7 @@ export class CeaCdkStack extends cdk.Stack {
         }
       ]
     })
-
+    
     new cdk.CfnOutput(this, "VpcId", {
       value: this.vpc.vpcId,
       description: "VPC ID"
